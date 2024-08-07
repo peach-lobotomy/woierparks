@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waterparks Band Fan Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1a1a2e; /* Dark Blue Background */
+            color: #ffffff; /* White Text */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .section {
+            padding: 50px 20px;
+        }
+        .header {
+                     background-color: #16213e; /* Darker Blue */
+            padding: 20px;
+            text-align: center;
+            width: 100%;
+        }
+        .header img {
+            width: 80%;
+            max-width: 600px;
+            border-radius: 10px;
+        }
+        h1 {
+            font-size: 3em;
+            margin: 20px 0;
+        }
+        h2 {
+            font-size: 2em;
+            margin: 20px 0;
+        }
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin: 20px 0;
+        }
+        .album-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .album-grid img {
+            width: 150px;
+            height: 150px;
+            border-radius: 10px;
+        }
+        .footer {
+            background-color: #FF0000;
+            padding: 20px;
+            font-size: 0.9em;
+        }
+        .AAAA {
+            color: #3498db;            /* Text color */
+            font-size: 20px;           /* Font size */
+            font-weight: bold;         /* Font weight */
+            font-family: Arial, sans-serif; /* Font family */
+            text-align: center;        /* Center-align the text */
+            text-transform: uppercase; /* Uppercase text */
+            text-decoration: underline;/* Underline text */
+            line-height: 1.5;          /* Line height */
+            letter-spacing: 2px;       /* Space between letters */
+            background-color: #f1f1f1; /* Background color */
+            padding: 10px;             /* Padding around text */
+            margin: 20px;              /* Margin around the element */
+            border-radius: 5px;        /* Rounded corners */
+        }
+    </style>
+</head>
+<body>
+	
+	
+    <!-- Header Section -->
+    <div class="section header">
+        <h1>>:(</h1>
+        <h2>you clicked princess..</h2>
+    </div>
+	
+    <div class="cattykitcat">
+       <a href="../index.html" ><p class="AAAA">go back</p>
+       <img src="source/catpee.jpeg" width="500" height="500"></a>
+    </div>
+
+
+  <audio id="autoPlayAudio">
+        <source src="source/nooe.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+		 <script>
+		
+        window.addEventListener('load', function() {
+            var audio = document.getElementById('autoPlayAudio');
+			
+			 audio.volume = 0.25;
+			 
+            audio.play().catch(function(error) {
+                // Handle play error if the browser blocks autoplay
+                console.log('Autoplay was prevented. Interaction required.');
+            });
+        });
+    </script>
+
+</body>
+</html>
