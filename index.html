@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waterparks Band Fan Page</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to bottom, #FF0000, #FFD700);
+            color: #FFFFFF;
+            text-align: center;
+        }
+        .section {
+            padding: 50px 20px;
+        }
+        .header {
+            background-color: #FF0000;
+        }
+        .header img {
+            width: 80%;
+            max-width: 600px;
+            border-radius: 10px;
+        }
+        h1 {
+            font-size: 3em;
+            margin: 20px 0;
+        }
+        h2 {
+            font-size: 2em;
+            margin: 20px 0;
+        }
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin: 20px 0;
+        }
+        .album-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .album-grid img {
+            width: 150px;
+            height: 150px;
+            border-radius: 10px;
+        }
+        .footer {
+            background-color: #FF0000;
+            padding: 20px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+  <audio id="autoPlayAudio">
+        <source src="source/star.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- Header Section -->
+    <div class="section header">
+        <img src="source/banner.jpeg" alt="Waterparks Band">
+        <h1>Waterparks</h1>
+        <h2>Welcome to the Fan Page</h2>
+    </div>
+
+    <!-- About Section -->
+    <div class="section about" style="background-color: #FFD700; color: #000;">
+        <h2>PARX</h2>
+        <p>water park in 2024 is the best waterparks 2024 real (fight me if you think im wrong) WATEOPARK........</p>
+    </div>
+
+    <!-- Discography Section -->
+    <div class="section discography" style="background-color: #FF0000;">
+        <h2>Discography</h2>
+        <div class="album-grid">
+            <a href="https://open.spotify.com/album/0VYYYjgeJrK35VeWREFXIt" target="_blank" ><img src="source/AC.jpeg" alt="Airplane Conversations"></a>
+                 <a href="https://open.spotify.com/album/7kw5Tuj0uPQa1mpmS8h2f3" target="_blank" ><img src="source/cluster.jpeg" alt="Cluster EP"></a>
+                 <a href="https://open.spotify.com/album/6eadjprezrrE7PMbIh3Rqb" target="_blank" ><img src="source/blacklight.jpeg" alt="Blacklight"></a>
+                 <a href="https://open.spotify.com/album/0FMY6FT7bjxhnCoTthH0zR" target="_blank" ><img src="source/DD.jpeg" alt="Double Dare"></a>
+                 <a href="https://open.spotify.com/album/4wpa4paytNYdZpGgL6WwvR" target="_blank" ><img src="source/Ent.jpeg" alt="Entertainment"></a>
+                 <a href="https://open.spotify.com/album/6W5NAcsq5dV2vMcxPFWXTb" target="_blank" ><img src="source/fandom.jpeg" alt="Fandom"></a>
+                 <a href="https://open.spotify.com/track/3kJlato6giDeV5Hakxj5nw" target="_blank" ><img src="source/GH.jpeg" alt="Greatest Hits"></a>
+                 <a href="https://open.spotify.com/album/6FxkiRw25b3z8CqqFE8pSm" target="_blank" ><img src="source/IP.jpeg" alt="Intellectual property"></a>
+                 <a href="https://open.spotify.com/album/3ydGShJ5PF8xxnXBQH7OPx" target="_blank" ><img src="source/IP2.jpeg" alt="Intellectual property 2"></a>
+        </div>
+    </div>
+	
+
+    <!-- Tour Section -->
+    <div class="section tour" style="background-color: #FFD700; color: #000;">
+        <h2>awsten is a princess</h2>
+        <p>awaten waterpark 2025 is true!!!!</p>
+        <img src="source/awsten.jpeg" alt="PRINCESS" width="300" height="600">
+        <img src="source/awstentroll.jpeg" alt="<3" width="200" height="600">
+    </div>
+
+    <!-- New Section 1 -->
+    <div class="pretty boy otto" style="background-color: #FF0000;">
+        <h2>pretty boy otto</h2>
+        <p>otto wood..... otto wood the real otto wood is a killer.. He killed amsten 15.4 TIMES!!!!........</p>
+        <img src="source/otto.jpeg" alt="Pretty boy otto wood" width="300" height="300">
+        <img src="source/otter.jpeg" alt="Lookalike" width="450" height="300">
+    </div>
+
+    <!-- New Section 2 -->
+    <div class="geoff" style="background-color: #FFD700; color: #000;">
+        <h2>geoff................</h2>
+        <p>GOFF.. GEOFF IS A PRINCESS AND MUST BE PROTCCTED!!!!..... please protect him from julian's evil deeds :pray:</p>
+        <img src="source/geoff.jpeg" alt="JEFF MY BElOVED" width="300" height="300">
+		<img src="source/jeffminion.jpeg" alt="geoff real" width="300" height="300">
+    </div>
+
+    <!-- Footer Section -->
+    <div class="section footer">
+        <p>waterpiss! i wish parx was real.. ;c </p>
+        <p> Credits to sam and bird <3 <3 <3 <3 <3 </p>
+		<a href="evil/index.html"><img src='source/princess.jpeg' width="600" height="150" ></a>
+    </div>
+	 <script>
+        // Wait for the page to fully load
+		
+		
+        window.addEventListener('load', function() {
+            var audio = document.getElementById('autoPlayAudio');
+			
+			 audio.volume = 0.5;
+			 
+			 
+            audio.play().catch(function(error) {
+                // Handle play error if the browser blocks autoplay
+                console.log('Autoplay was prevented. Interaction required.');
+            });
+        });
+    </script>
+</body>
+</html>
